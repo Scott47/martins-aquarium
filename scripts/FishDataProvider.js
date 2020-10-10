@@ -1,11 +1,11 @@
 const fishCollection = [
     {
         name: "Bart",
-        food: "crustaceans",
-        species: "simpson",
+        food: "mollusks, worms, insect larvae, crustaceans, and some fish",
+        species: "Ambystoma mexicanum",
         length: 6,
         harvested: "Springfield",
-        image: ""
+        image: "https://www.welovesharks.club/wp-content/uploads/2017/04/Depositphotos_99722956_m-2015.jpg"
     },
     {
         name: "Lisa",
@@ -13,7 +13,7 @@ const fishCollection = [
         species: "simpson",
         length: 3,
         harvested: "Springfield",
-        image: ""
+        image: "https://images.pexels.com/photos/886210/pexels-photo-886210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     },
     {
         name: "Marge",
@@ -21,7 +21,7 @@ const fishCollection = [
         species: "simpson",
         length: 10,
         harvested: "Springfield",
-        image: ""
+        image: "https://i0.wp.com/metro.co.uk/wp-content/uploads/2017/09/finding-nemo.jpg?quality=90&strip=all&crop=0px%2C62px%2C1024px%2C538px&resize=1200%2C630&zoom=1&ssl=1"
     },
     {
         name: "Homer",
@@ -29,70 +29,12 @@ const fishCollection = [
         species: "simpson",
         length: 15,
         harvested: "Springfield",
-        image: ""
-    },
-    {
-        name: "Mo",
-        food: "",
-        species: "bartender",
-        length: 6,
-        harvested: "Springfield",
-        image: ""
-    },
-    {
-        name: "Mr. Burns",
-        food: "blood",
-        species: "kleptocrat",
-        length: 5,
-        harvested: "cryo chamber",
-        image: ""
-    },
-    {
-        name: "Apu",
-        food: "curry",
-        species: "human",
-        length: 9,
-        harvested: "Springfield",
-        image: ""
-    },
-    {
-        name: "Sideshow Bob",
-        food: "fries",
-        species: "clown",
-        length: 21,
-        harvested: "Springfield",
-        image: ""
+        image: "https://pbs.twimg.com/profile_images/773917612648591365/hFl6DSSh_400x400.jpg"
     }
+
 ]
 
 export const useFish = () => {
     return fishCollection.slice()
 }
 
-export const mostHolyFish = () => {
-    // 3, 6, 9, 12, etc... fish
-    const holyFish = []
-
-    for (const fish of holyFish) {
-        if(fish.length % 3 === 0) {
-            console.log(fish)
-        } else if (fish.length % 5 === 0) {
-            console.log(fish)
-        } else if (fish.length % 5 === 0 && fish.length % 3 === 0) {
-            console.log(fish)
-        }
-    }
-
-    return holyFish
-}
-
-export const soldierFish = () => {
-    // 5, 10, 15, 20, 25, etc... fish
-
-    return soldiers
-}
-
-export const nonHolyFish = () => {
-    // Any fish not a multiple of 3 or 5
-    return regularFish
-}
